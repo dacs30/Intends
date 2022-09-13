@@ -41,11 +41,11 @@ class SignInActivity : AppCompatActivity() {
                         intent.putExtra("USER_EMAIL", email)
                         startActivity(intent)
                     } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT)
+                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
             } else {
-                Toast.makeText(this, "You need to fill all the fields", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "You need to fill all the fields", Toast.LENGTH_SHORT).show()
             }
         }
     }

@@ -38,14 +38,14 @@ class SignUpActivity : AppCompatActivity() {
                             val intent = Intent(this, SignInActivity::class.java)
                             startActivity(intent)
                         } else {
-                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT)
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
                     }
                 } else {
-                    Toast.makeText(this, "Passwords don't match", Toast.LENGTH_SHORT)
+                    Toast.makeText(this, "Passwords don't match", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this, "You need to fill all the fields", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "You need to fill all the fields", Toast.LENGTH_SHORT).show()
             }
         }
 
